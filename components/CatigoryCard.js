@@ -1,0 +1,18 @@
+import { View, Text,Image, TouchableOpacity } from 'react-native'
+import React from 'react'
+
+const CatigoryCard = ({imgUrl,title}) => {
+  return (
+        <TouchableOpacity className="relative mr-2">
+        <Image 
+        className="h-20 w-20 rounded-lg"
+        source={{
+            uri : imgUrl
+        }} />
+      <Text className="absolute bottom-1 left-1 text-white font-bold">{title}</Text>
+      </TouchableOpacity>
+    
+  )
+}
+
+export default CatigoryCard
